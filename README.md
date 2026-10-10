@@ -13,6 +13,7 @@ Requirements:
 - nmap
 - nslookup
 - ike-scan
+
 Optional (Only needed if you want to use the security menu in this script.):
 - Mullvad VPN
 - Proxychains
