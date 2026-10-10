@@ -536,13 +536,35 @@ PORT=80 && echo "Invalid port chosen! Reverting to port 80"
 }
 # ------------------ #
 ######################
-
 ##################
 # -- VPN MENU -- #
 vpn() {
 kalilogo
 echo "VPN Menu"
 echo
+	vpnmenu=("Status" "Enable" "Disable" "Go back")
+  select opt in "${vpnmenu[@]}"; do
+  if [ "$opt" = "Status" ]; then
+mullvad status
+echo "Press enter to return."
+read var
+vpn
+  elif [ "$opt" = "Enable" ]; then
+mullvad connect
+echo "Press enter to return."
+read var
+vpn
+  elif [ "$opt" = "Disable" ]; then
+mullvad disconnect
+echo "Press enter to return."
+read var
+vpn
+  elif [ "$opt" = "Go back" ]; then
+security
+  else
+  echo "Invalid option, press enter to return to menu."
+  read var
+  vpn
 }
 # -------------- #
 ##################
