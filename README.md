@@ -1,4 +1,4 @@
-# k-ai
+# Kali Attack Interface
 Pentesting tools CLI (better version)
 Built for Kali linux however any will work provided it has all of the tools installed.
 
