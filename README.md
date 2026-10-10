@@ -19,3 +19,7 @@ Optional (Only needed if you want to use the security menu in this script.):
 - Proxychains
 - Tor
 (The "VPN" function will later be configured for Mullvad VPN, others will not work with this script stock.)
+
+
+NOT WORKING!!
+WILL COMPLETE ONCE I REINSTALL KALI LINUX TO TEST!!
