@@ -539,18 +539,30 @@ PORT=80 && echo "Invalid port chosen! Reverting to port 80"
 
 ##################
 # -- VPN MENU -- #
-
+vpn() {
+kalilogo
+echo "VPN Menu"
+echo
+}
 # -------------- #
 ##################
 
 ##################
 # -- TOR MENU -- #
-
+tor() {
+kalilogo
+echo "TOR Menu"
+echo
+}
 # -------------- #
 ##################
 
 ##########################
 # -- PROXYCHAINS MENU -- #
-
+proxychains() {
+kalilogo
+echo "Proxycahins Menu"
+echo
+}
 # ---------------------- #
 ##########################
