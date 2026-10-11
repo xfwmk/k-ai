@@ -1,8 +1,8 @@
 #!/bin/bash
 
-## WELCOME TO THE UPDATED PENTESTING MENU BY XFWMK https://github.com/xfwmk ##
+# -- WELCOME TO THE UPDATED PENTESTING MENU BY XFWMK https://github.com/xfwmk -- #
 
-## shows its not the default shell ## 
+# -- shows its not the default shell -- # 
 PS3=""" 
 kali>"""
 
@@ -16,8 +16,7 @@ echo -e '\e[5 q' ## BLINKING LINE CURSOR ##
 
 ##################################
 # -- ASCII ART (CLEARS SHELL) -- #
-kalilogo()
-{
+kalilogo() {
 	clear && echo ""
 echo ".............."
 echo """            ..,;:ccc,.
@@ -58,8 +57,7 @@ mainmenu
 
 ###################
 # -- MAIN MENU -- # 
-mainmenu()
-{
+mainmenu() {
 mainmenu=("DoS" "Reconmenu" "Security" "Readme" "Quit" )
 kalilogo
 echo "Main Menu"
@@ -88,8 +86,7 @@ done
 
 ##################
 # -- DOS MENU -- #
-dosmenu()
-{
+dosmenu() {
 kalilogo
 echo "DoS Menu"
 echo
@@ -116,8 +113,7 @@ done
 
 ####################
 # -- RECON MENU -- #
-reconmenu()
-{
+reconmenu() {
 kalilogo
 echo "Recon Menu"
 echo
@@ -179,8 +175,7 @@ echo
 
 #####################
 # -- ICMP FLOOD -- #
-icmpflooddos()
-{
+icmpflooddos() {
 		echo "Preparing to launch ICMP Echo Flood using hping3"
         echo "Warning: if used for malicious intent YOU are responsible for the consequences"
 		echo "Enter target IP/hostname:"
@@ -208,8 +203,8 @@ icmpflooddos()
 
 ###################
 # -- SYN FLOOD -- #
-synflooddos()
-{		echo "This uses hping3. checking for presence..."
+synflooddos() {
+	echo "This uses hping3. checking for presence..."
 	if test -f "/usr/sbin/hping3"; then echo "hping3 found, continuing!";
 		echo "Enter target:"
 	read -i $TARGET -e TARGET
@@ -289,8 +284,8 @@ PORT=80 && echo "Invalid port chosen! Reverting to port 80"
 
 ###################
 # -- ACK FLOOD -- #
-ackflooddos()
-{		echo "This uses hping3, checking for presence..."
+ackflooddos() {
+	echo "This uses hping3, checking for presence..."
 	if test -f "/usr/sbin/hping3"; then echo "hping3 found, continuing!";
 		echo "Enter target:"
 	read -i $TARGET -e TARGET
@@ -370,8 +365,8 @@ PORT=80 && echo "Invalid port chosen! Reverting to port 80"
 
 ##########################
 # -- DISTRACTION SCAN -- #
-distractionscandos()
-{ echo "(extra loud) TCP SYN scan from any spoofed IP address"
+distractionscandos() { 
+echo "(extra loud) TCP SYN scan from any spoofed IP address"
 echo """This is intentionally obvious so you can perform "legal" activities on the same target undetected"""
 echo "Enter target:"
 read -i $TARGET -e TARGET
@@ -430,8 +425,8 @@ reconmenu
 
 ####################
 # -- PING SWEEP -- #
-pingsweep()
-{ echo "This module performs a simple ICMP echo 'ping' sweep"
+pingsweep() { 
+	echo "This module performs a simple ICMP echo 'ping' sweep"
 	echo "Please enter the target (e.g. 192.168.1.0/24):"
 	read -i $TARGET -e TARGET
 sudo nmap -sP -PE $TARGET --reason
@@ -444,8 +439,8 @@ reconmenu
 
 ####################
 # -- QUICK SCAN -- #
-quickscan()
-{ echo "This module conducts a scan using nmap"
+quickscan() {
+echo "This module conducts a scan using nmap"
 echo "It is designed to scan an entire network for common open ports"
 echo "It will perform a TCP SYN port scan of the 1000 most common ports"
 echo "Depending on the target, the scan might take a long time to finish"
@@ -466,8 +461,8 @@ reconmenu
 
 ############################
 # -- START DETAILEDSCAN -- #
-detailedscan()
-{ echo "This module performs a scan using nmap"
+detailedscan() {
+echo "This module performs a scan using nmap"
 echo "It is designed to perform a detailed scan of a specific host but can be used against an entire network"
 echo "This scans ALL ports on the target. It also attempts OS detection and gathers service information"
 echo "This scan might take a very long time to finish, please be patient"
@@ -488,8 +483,8 @@ reconmenu
 
 ##################
 # -- UDP SCAN -- #
-udpscan()
-{ echo "This module lets you scan a host/network for open UDP ports"
+udpscan() {
+echo "This module lets you scan a host/network for open UDP ports"
 echo "It scans ALL ports on the target system. This may take some time, please be patient"
 echo "Enter the host/subnet to scan:"
 read -i $TARGET -e TARGET
@@ -508,8 +503,8 @@ reconmenu
 
 ######################
 # -- CHECK UPTIME -- #
-checkuptime()
-{ echo "This module will attempt to estimate the uptime of a given server, using hping3"
+checkuptime() {
+  echo "This module will attempt to estimate the uptime of a given server, using hping3"
   echo "This is not guaranteed to work"
   echo "Enter your target:"
   read -i $TARGET -e TARGET
@@ -536,6 +531,7 @@ PORT=80 && echo "Invalid port chosen! Reverting to port 80"
 }
 # ------------------ #
 ######################
+
 ##################
 # -- VPN MENU -- #
 vpn() {
