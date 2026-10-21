@@ -22,4 +22,4 @@ Optional (Only needed if you want to use the security menu in this script.):
 
 
 NOT WORKING!!
-WILL COMPLETE ONCE I REINSTALL KALI LINUX TO TEST!!
+VPN TOR AND PROXYCHAINS NOT COMPLETE (not tested either)
