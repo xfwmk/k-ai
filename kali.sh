@@ -2,9 +2,12 @@
 
 # -- WELCOME TO THE UPDATED PENTESTING MENU BY XFWMK https://github.com/xfwmk -- #
 
+#########################################
 # -- shows its not the default shell -- # 
 PS3=""" 
 kali>"""
+# ------------------------------------- #
+##########################################
 
 ####################
 # -- PREP SHELL -- #
