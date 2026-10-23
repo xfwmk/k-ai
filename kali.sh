@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# -- WELCOME TO THE UPDATED PENTESTING MENU BY XFWMK https://github.com/xfwmk -- #
-
 #########################################
 # -- shows its not the default shell -- # 
 PS3=""" 
